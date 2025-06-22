@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+.button-group input {
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <p><strong>Student Survey Form</strong> - please fill out the following form regarding your experience visiting the campus:</p>
+    <form action="" method="post">
+    
+      <!-- Text Entries -->
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="First Name" required name="First Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Last Name" required name="Last Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Street Address" required name="Street Address"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="City" required name="City"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="State" required name="State"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Zipcode" required name="Zipcode"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Telephone Number" required name="Telephone number"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="E-mail" required name="E-mail"></p>
+      <h6>Please indicate the date this survey was taken:</h6>
+      <p><input class="w3-input w3-padding-16 w3-border" type="date" placeholder="Date" required name="Date" value="Date"></p>
+      
+      <!-- Checkboxes -->
+      <h6>Please indicate what you liked most about the campus:</h6>
+      <input type="checkbox" id="reason1" name="reason1" value="Students">
+  <label for="reason1"> Students</label><br>
+  <input type="checkbox" id="reason2" name="reason2" value="Location">
+  <label for="reason2"> Location</label><br>
+  <input type="checkbox" id="reason3" name="reason3" value="Campus">
+  <label for="reason3"> Campus</label><br>
+  <input type="checkbox" id="reason4" name="reason4" value="Atmosphere">
+  <label for="reason4"> Atmosphere</label><br>
+  <input type="checkbox" id="reason5" name="reason5" value="Dorm">
+  <label for="reason5"> Dorm Rooms</label><br>
+  <input type="checkbox" id="reason6" name="reason6" value="Sports">
+  <label for="reason6"> Sports</label><br>
+      <!-- Radio Buttons -->
+      <h6>Please indicate how you became interested in the university:</h6>
+      <input type="radio" id="interest1" name="interest1" value="Friends">
+  <label for="interest1">Friends</label><br>
+  	  <input type="radio" id="interest2" name="interest2" value="Television">
+  <label for="interest2">Television</label><br>
+      <input type="radio" id="interest3" name="interest3" value="Internet">
+  <label for="interest3">Internet</label><br>
+      <input type="radio" id="interest4" name="interest4" value="Other">
+  <label for="interest4">Other</label><br>
+  
+      <!-- Dropdown List -->
+      <h6>Please indicate the likelihood you would recommend this school to other prospective students:</h6>
+      <label for="likelihood">Make a selection:</label>
+  	  <select name="likelihood" id="likelihood">
+    	<option value="very">Very Likely</option>
+    	<option value="likely">Likely</option>
+    	<option value="unlikely">Unlikely</option>
+  	  </select>
+      
+      <!-- Raffle -->
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Raffle - enter ten comma separated numbers between 1-100" required name="Raffle"></p>
+      
+      <!-- Additional Comments -->
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Additional Comments"></p>
+      
+      <!-- Submit, Reset and Cancel Buttons -->
+      <div class="button-group">
+      	<button class="w3-button w3-black" type="submit">Submit</button>
+      	<button class="w3-button w3-black" type="reset">Reset</button>
+        <button class="w3-button w3-black" onclick="location.href='hw1.html'">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
