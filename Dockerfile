@@ -5,7 +5,7 @@ FROM nginx:latest
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy my web app files into the Nginx web root
-COPY . /usr/share/nginx/html/
+COPY web-app /usr/share/nginx/html/
 
 # Expose port 80 (HTTP)
 EXPOSE 80
