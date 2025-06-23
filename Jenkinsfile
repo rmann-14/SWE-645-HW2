@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = 'rmann8@gmu.edu'
-        IMAGE_NAME = 'rmann14/hw2-image'
+        DOCKERHUB_USER = 'rmann14'
+        IMAGE_NAME = 'hw2-image'
         IMAGE_TAG = 'latest'
     }
 
