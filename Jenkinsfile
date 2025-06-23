@@ -36,8 +36,8 @@ pipeline {
             steps {
                 script {
                     sh """
-                    kubectl apply -f k8s/hw2-deployment.yaml
-                    kubectl apply -f k8s/hw2-service.yaml
+                    kubectl apply -f hw2-deployment.yaml
+                    kubectl apply -f hw2-service.yaml
                     """
                 }
             }
