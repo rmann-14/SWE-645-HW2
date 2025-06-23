@@ -36,8 +36,8 @@ pipeline {
             steps {
                 withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
                     sh """
-                    kubectl apply -f hw2-deployment.yaml
-                    kubectl apply -f hw2-service.yaml
+                    kubectl create -f hw2-deployment.yaml
+                    kubectl create -f hw2-service.yaml
                     """
                 }
             }
